@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Eduardo Correia</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                background-color: #999;
+                color: #222;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            nav{
+                position: fixed;
+                height: 80px;
+                width: 100%;
+                background-color: #ffa500;
+            }
+
+            nav h1{
+                padding-top: 20px;
+                text-align: center;
+                color: #f0f0f0;
+                font-size: 40px;
+            }
+
+            .social{
+                position: fixed;
+                padding-left: 10px;
+                margin-top: 150px;
+                width: 60px;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .tra{
+                width: 70px;
+                height: 70px;
+                box-sizing: border-box;
+                background-color: #ffa500;
+                border: 2px solid #1e1e31;
+                border-radius: 25%;
+                padding: 8px;
+            }
+
+            .tra:hover{
+                transform: rotate(45deg);
+                transition-delay: 0.1s;
+                transition-duration: 1s;
+            }
+
+            .tra:hover + img{
+                transform: rotate(-32929deg);
+                transition-delay: 0.1s;
+                transition-duration: 1s;
+            }
+
+            .container{
+                top: 150px;
+                margin: auto;
+                height: 500px;
+                width: 1000px;
+                background-color: #fff;
+                position: relative;
+            }
+
+            .container ul{
+                list-style: none;
+            }
+
+            .container ul li{
+                float: left;
+            }
+
+            .rb{
+                display: none;
+            }
+
+            .content{
+                display: none;
+                position: absolute;
+                left: 0;
+                padding: 50px;
+                height: 320px;
+                width: 900px;
+                overflow-y: scroll;
+            }
+
+            ::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+                background: transparent;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #ffa500;
+            }
+
+            label{
+                background-color: #1e1e31;
+                color: #fff;
+                font-size: 24px;
+                font-weight: bold;
+                display: block;
+                padding: 25px;
+                height: 30px;
+                width: 150px;
+                text-align: center;
+                cursor: pointer;
+                transition: all .2s;
+            }
+
+            .rb:hover ~ label{
+                opacity: 0.8;
+            }
+
+            .rb:checked ~ label{
+                background-color: #ffa500;
+            }
+
+            .rb:checked ~ .content{
+                display: block;
+            }
+
+            img{
+                width: 50px;
+                height: auto;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <h1>Página pessoal de Eduardo Correia</h1>
+        </nav>
+
+        <div class="social">
+                <div class="tra">
+                    <a href="#"><img src="imagens/zap.svg"></a>
+                </div>
+                <div class="tra">
+                    <a href="#"><img src="imagens/github.svg"></a>
+                </div>
+
+                <div class="tra">
+                    <a href="#"><img src="imagens/linkedin.png"></a>
+                </div>
+
+                <div class="tra">
+                    <a href="#"><img src="imagens/discord.png"></a>
+                </div>
+
+                <div class="tra">
+                    <a href="#"><img src="imagens/gmail.png"></a>
+                </div>
+        </div>
+
+        <div class="container">
+            <ul>
+                <li>
+                    <input type="radio" name="tabs" class="rb" id="tab_1" checked>
+                    <label for="tab_1">Cursos</label>
+                    <div class="content">
+                        <h2>Cursos</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum risus vitae libero molestie fringilla. Nullam in tortor et ligula accumsan consequat. Sed quis lectus nec augue bibendum venenatis. Praesent elementum est nunc, et pellentesque ligula ultricies eget. Nullam a tortor et turpis mollis sagittis vitae sed sem. Donec nisl odio, iaculis quis urna ac, aliquet tincidunt odio. Ut porta risus sit amet pulvinar sodales.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum risus vitae libero molestie fringilla. Nullam in tortor et ligula accumsan consequat. Sed quis lectus nec augue bibendum venenatis. Praesent elementum est nunc, et pellentesque ligula ultricies eget. Nullam a tortor et turpis mollis sagittis vitae sed sem. Donec nisl odio, iaculis quis urna ac, aliquet tincidunt odio. Ut porta risus sit amet pulvinar sodales.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum risus vitae libero molestie fringilla. Nullam in tortor et ligula accumsan consequat. Sed quis lectus nec augue bibendum venenatis. Praesent elementum est nunc, et pellentesque ligula ultricies eget. Nullam a tortor et turpis mollis sagittis vitae sed sem. Donec nisl odio, iaculis quis urna ac, aliquet tincidunt odio. Ut porta risus sit amet pulvinar sodales.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum risus vitae libero molestie fringilla. Nullam in tortor et ligula accumsan consequat. Sed quis lectus nec augue bibendum venenatis. Praesent elementum est nunc, et pellentesque ligula ultricies eget. Nullam a tortor et turpis mollis sagittis vitae sed sem. Donec nisl odio, iaculis quis urna ac, aliquet tincidunt odio. Ut porta risus sit amet pulvinar sodales.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum risus vitae libero molestie fringilla. Nullam in tortor et ligula accumsan consequat. Sed quis lectus nec augue bibendum venenatis. Praesent elementum est nunc, et pellentesque ligula ultricies eget. Nullam a tortor et turpis mollis sagittis vitae sed sem. Donec nisl odio, iaculis quis urna ac, aliquet tincidunt odio. Ut porta risus sit amet pulvinar sodales.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum risus vitae libero molestie fringilla. Nullam in tortor et ligula accumsan consequat. Sed quis lectus nec augue bibendum venenatis. Praesent elementum est nunc, et pellentesque ligula ultricies eget. Nullam a tortor et turpis mollis sagittis vitae sed sem. Donec nisl odio, iaculis quis urna ac, aliquet tincidunt odio. Ut porta risus sit amet pulvinar sodales.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum risus vitae libero molestie fringilla. Nullam in tortor et ligula accumsan consequat. Sed quis lectus nec augue bibendum venenatis. Praesent elementum est nunc, et pellentesque ligula ultricies eget. Nullam a tortor et turpis mollis sagittis vitae sed sem. Donec nisl odio, iaculis quis urna ac, aliquet tincidunt odio. Ut porta risus sit amet pulvinar sodales.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum risus vitae libero molestie fringilla. Nullam in tortor et ligula accumsan consequat. Sed quis lectus nec augue bibendum venenatis. Praesent elementum est nunc, et pellentesque ligula ultricies eget. Nullam a tortor et turpis mollis sagittis vitae sed sem. Donec nisl odio, iaculis quis urna ac, aliquet tincidunt odio. Ut porta risus sit amet pulvinar sodales.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="tabs" class="rb" id="tab_2">
+                    <label for="tab_2">Projetos</label>
+                    <div class="content">
+                        projetos
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="tabs" class="rb" id="tab_3">
+                    <label for="tab_3">Blog</label>
+                    <div class="content">
+                        blog
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="tabs" class="rb" id="tab_4">
+                    <label for="tab_4">Conquistas</label>
+                    <div class="content">
+                        conquistas
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="tabs" class="rb" id="tab_5">
+                    <label for="tab_5">Contato</label>
+                    <div class="content">
+                        contato
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
